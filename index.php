@@ -21,8 +21,6 @@ require 'includes/init.php';
 # Send our no-cache headers
 sendNoCache();
 
-# Start the output buffer
-ob_start('render');
 
 # Flag valid entry point for hotlink protection
 if (!isset($_GET['e']) || $_GET['e']!='no_hotlink') {
